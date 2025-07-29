@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquaries.css">
+</head>
+<body>
+    <nav id="desktop-nav">
+        <div class="logo">Adham Karim</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#experience">experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="hamburger-nav">
+        <div class="logo">Adham Karim</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <li><a href="#about" onclick="toggleMenu()">About</a></li>
+                <li><a href="#experience" onclick="toggleMenu()">experience</a></li>
+                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+                <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+        </div>
+    </nav>
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="./Assets/profile.jpg" alt="Adham Karim Profile Picture">
+        </div>
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Adham Karim</h1>
+            <p class="section__text__p2">Computer Engineer</p>
+            <div class="btn-container">
+                <button class="btn btn-color-2" onclick="window.open('./Assets/CV.pdf')">
+                    Download CV
+                </button>
+                <button class="btn btn-color-1" onclick="location.href='./#contact'">
+                    Contact Info
+                </button>
+            </div>
+            <div id="socials-container">
+                <img src="./Assets/Linkedin.pic.png" alt="My Linkedin Profile" class="icon" onclick="location.href='https://linkedin.com/in/adham-karim-0b4a1a1b2/'">
+                <img src="./Assets/Github.pic.jpeg" alt="My Github Profile" class="icon" onclick="location.href='https://Github.com/AdhamKarim'">
+            </div>
+        </div>    
+    </section>
+    <section id="About">
+        <p class="section__text__p1">Get to know more</p>
+        <h1 class="title">About Me</h1>
+        <div class="section-container">
+            <div class="section__pic-container">
+                <img src="./Assets/About-pic.jpg" alt="Profile Picture" class="about-pic">
+            </div>
+            <div class="about-card">
+                <div class="about-containers">
+                    <div class="details-container">
+                        <img src="./Assets/Badge-icon.png" alt="Experience icon" class="icon">
+                        <h3>Experience</h3>
+                        <p>Embedded System <br />Trainee</p>
+                    </div>
+                    <div class="details-container">
+                        <img src="./Assets/Education-icon.png" alt="Education icon" class="icon">
+                        <h3>Education</h3>
+                        <p>1st Year of Computer Engineering <br />Arab Academy</p>
+                    </div>
+                </div>
+                <div class="text-container">
+                    <p class="about-main-text">
+                        I am a college student at Arab Academy in Computer Engineering Major. I have finished first year of college. I am passionate to learn new skills and techincal skills. I am a teamworker , active listener , haedworker and open to making new friends and relations.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="experience">
+        <h1 class="title">Experience</h1>
+        <div class="section-container">
+            <div class="experience-card">
+                <p class="experience-main-text">Attended an Internship at Genesis (IT Company) for two months from 15/7/2025 to 15/9/2025 and learned HTML , PYTHON , JAVASCRIPT , Web Development , Embedded Systems and Networks.</p>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h1 class="title">Projects</h1>
+        <div class="projects-grid">
+            <div class="project-row">
+                <div class="project-card">
+                    <h2>Personal Portofolio Webpage</h2>
+                    <p>Used HTML , CSS , JAVASCRIPT to make a personal portofolio.</p>
+                    <a href="https://github.com/yourusername/project1" target="_blank">Project Link</a>
+                </div>
+                <div class="project-card">
+                    <h2>Insufficient Motor Winding</h2>
+                    <p>Repaired an Insufficient washing machine motor and re-installed it.</p>
+                </div>
+            </div>
+            <div class="project-row project-row-center">
+                <div class="project-card">
+                    <h2>Windmills Persentation and Stereotype.</h2>
+                    <p>Studied the windmills structure and built a fully working Stereotype from scratch.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="title">Contact</h1>
+        <div class="contact-message-row">
+            <p class="contact-main-text">Feel free to reach out to me!</p>
+        </div>
+        <div class="contact-row">
+            <div class="contact-info-col">
+                <div class="contact-info-card">
+                    <span class="contact-label">Email</span>
+                    <p class="contact-info email">adhamkarim2580@gmail.com</p>
+                </div>
+                <div class="contact-info-card">
+                    <span class="contact-label">Phone</span>
+                    <p class="contact-info">01012060406</p>
+                </div>
+            </div>
+            <div class="contact-form-card">
+                <form class="contact-form">
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn btn-color-1">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <a href="#" id="static-arrow">
+        <img src="./Assets/Arrow-icon.png" alt="Arrow icon" class="icon arrow">
+    </a>
+    <script src="script.js"></script>
+</body>
+</html>
